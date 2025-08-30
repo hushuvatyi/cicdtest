@@ -36,7 +36,7 @@ jobs:
 
             docker stop ${{ secrets.CONTAINER }}
             docker rm ${{ secrets.CONTAINER }} 
-            #docker rmi ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }} 
+
             docker pull ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }}:latest             
             docker run --name ${{ secrets.CONTAINER }} -d -p 3000:3000 ${{ secrets.DOCKER_USER }}/${{ secrets.IMAGE }}
    
