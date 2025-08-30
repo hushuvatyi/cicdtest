@@ -7,6 +7,6 @@ async function bootstrap() {
   console.log('Server is running on port 3000');
 }
 bootstrap().catch((err) => {
-  console.error('Error during bootstrap:', err);
+  console.error('Error during bootstrap :', err);
   process.exit(1);
 });
